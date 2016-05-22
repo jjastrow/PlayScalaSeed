@@ -1,0 +1,51 @@
+@(title: String)
+
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <title>@title</title>
+    <link rel="stylesheet" media="screen" href="@routes.Assets.versioned("stylesheets/main.css")">
+    <link rel="shortcut icon" type="image/png" href="@routes.Assets.versioned("images/favicon.png")">
+    <script src="@routes.Assets.versioned("javascripts/hello.js")" type="text/javascript"></script>
+  </head>
+  <body>
+
+    <table>
+      <tr>
+        <td id="aceClubs" onclick="flip(this.id,'aceClubs-orig');">
+          <img src="@routes.Assets.versioned("images/PlayingCardsBack.jpeg")"/>
+        </td>
+        <td id="fiveSpades" onclick="flip(this.id,'fiveSpades-orig');">
+          <img src="@routes.Assets.versioned("images/PlayingCardsBack.jpeg")"/>
+        </td>
+        <td id="KingClubs"  onclick="flip(this.id,'KingClubs-orig');">
+          <img src="@routes.Assets.versioned("images/PlayingCardsBack.jpeg")"/>
+        </td>
+        <td id="nineDiamonds"  onclick="flip(this.id,'nineDiamonds-orig');">
+          <img src="@routes.Assets.versioned("images/PlayingCardsBack.jpeg")"/>
+        </td>
+        <td id="twoSpades"  onclick="flip(this.id,'twoSpades-orig');">
+          <img src="@routes.Assets.versioned("images/PlayingCardsBack.jpeg")"/>
+        </td>
+      </tr>
+    </table>
+
+    <table style="visibility: hidden;">
+      <tr>
+        <td id="aceClubs-orig"><img src="@routes.Assets.versioned("images/aceClubs.png")"/></td>
+        <td id="fiveSpades-orig"><img src="@routes.Assets.versioned("images/fiveSpades.png")"/></td>
+        <td id="KingClubs-orig"><img src="@routes.Assets.versioned("images/KingClubs.png")"/></td>
+        <td id="nineDiamonds-orig"><img src="@routes.Assets.versioned("images/nineDiamonds.png")"/></td>
+        <td id="twoSpades-orig"><img src="@routes.Assets.versioned("images/twoSpades.png")"/></td>
+      </tr>
+    </table>
+
+    <div style="visibility: hidden;">
+      <span id="cardBack">
+        <img src="@routes.Assets.versioned("images/PlayingCardsBack.jpeg")"/>
+      </span>
+    </div>
+
+  </body>
+</html>
