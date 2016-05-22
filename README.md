@@ -1,1 +1,1 @@
-# <PlayScalaSeed>
+# PlayScalaSeed
