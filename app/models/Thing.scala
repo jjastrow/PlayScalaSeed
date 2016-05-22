@@ -8,6 +8,6 @@ import play.api.libs.json._
 case class Thing(myThing: String)
 
 object Thing {
-  implicit val personReads = Json.reads[Thing]
-  implicit val personWrites = Json.writes[Thing]
+  implicit val thingReads = Json.reads[Thing]
+  implicit val thingWrites = Json.writes[Thing]
 }
