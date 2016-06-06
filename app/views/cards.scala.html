@@ -11,7 +11,7 @@
   </head>
   <body>
 
-    <table>
+    <table >
       <tr>
         <td id="aceClubs" onclick="flip(this.id,'aceClubs-orig');">
           <img src="@routes.Assets.versioned("images/PlayingCardsBack.jpeg")"/>
@@ -19,7 +19,7 @@
         <td id="fiveSpades" onclick="flip(this.id,'fiveSpades-orig');">
           <img src="@routes.Assets.versioned("images/PlayingCardsBack.jpeg")"/>
         </td>
-        <td id="KingClubs"  onclick="flip(this.id,'KingClubs-orig');">
+        <td class="hiddenCard" id="KingClubs"  onclick="flip(this.id,'KingClubs-orig');">
           <img src="@routes.Assets.versioned("images/PlayingCardsBack.jpeg")"/>
         </td>
         <td id="nineDiamonds"  onclick="flip(this.id,'nineDiamonds-orig');">
@@ -31,6 +31,10 @@
       </tr>
     </table>
 
+    <div>
+    <script src="http://ideone.com/e.js/hjiBLh" type="text/javascript" ></script>
+    </div>
+
     <table style="visibility: hidden;">
       <tr>
         <td id="aceClubs-orig"><img src="@routes.Assets.versioned("images/aceClubs.png")"/></td>
@@ -41,7 +45,7 @@
       </tr>
     </table>
 
-    <div style="visibility: hidden;">
+    <div>
       <span id="cardBack">
         <img src="@routes.Assets.versioned("images/PlayingCardsBack.jpeg")"/>
       </span>

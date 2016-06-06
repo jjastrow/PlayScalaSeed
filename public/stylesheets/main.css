@@ -5,3 +5,15 @@ td{
 img{
     height: 180px;
 }
+
+body{                            /* HTML tag names refer to those tags */
+    background-color: black;
+}
+
+#cardBack {                      /* refers to ID */
+    visibility: hidden;
+}
+
+.special {                      /* . refers to Classname  */
+
+}
